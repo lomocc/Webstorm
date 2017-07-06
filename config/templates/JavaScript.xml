@@ -1,0 +1,28 @@
+<templateSet group="JavaScript">
+  <template name="req" value="import $name$ from '$name$'$END$;" description="import from" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="rcls" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;/**&#10; * Created by Vincent on 2017/7/6.&#10; */&#10;export default class extends React.Component {&#10;  static propTypes = {};&#10;  static defaultProps = {};&#10;  state = {};&#10;  contextTypes = {};&#10;  childContextTypes = {};&#10;  getChildContext() {&#10;    return {};&#10;  }&#10;  constructor(props, context) {&#10;    super(props, context);&#10;  }&#10;  componentWillMount() {&#10;  }&#10;  componentDidMount() {&#10;  }&#10;  componentWillReceiveProps(nextProps, nextContext) {&#10;  }&#10;  shouldComponentUpdate(nextProps, nextState, nextContext) {&#10;  }&#10;  componentWillUpdate(nextProps, nextState, nextContext) {&#10;  }&#10;  componentDidUpdate(prevProps, prevState, prevContext) {&#10;  }&#10;  componentWillUnmount() {&#10;  }&#10;  render() {&#10;    return (&#10;      null&#10;    );&#10;  }&#10;}" description="React Class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="reqr" value="import React from 'react';&#10;import ReactDOM from 'react-dom';&#10;import PropTypes from 'prop-types';&#10;$END$" description="import 'react-dom'" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="danger" value="dangerouslySetInnerHTML={{__html: '$END$'}}" description="dangerouslySetInnerHTML" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
